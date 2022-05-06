@@ -1,8 +1,8 @@
-package com.test.nasapicturestestapp
+package com.test.nasapicturestestapp.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import com.test.nasapicturestestapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
