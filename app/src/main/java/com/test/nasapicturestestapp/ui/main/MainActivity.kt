@@ -11,6 +11,7 @@ import com.test.nasapicturestestapp.databinding.ActivityMainBinding
 import com.test.nasapicturestestapp.di.component.DaggerActivityComponent
 import com.test.nasapicturestestapp.di.module.ActivityModule
 import com.test.nasapicturestestapp.ui.PicturesListAdapter
+import com.test.nasapicturestestapp.ui.details.DetailsActivity
 import com.test.nasapicturestestapp.utils.EqualSpacingItemDecoration
 import com.test.nasapicturestestapp.utils.Loading
 import com.test.nasapicturestestapp.utils.Success
@@ -82,7 +83,10 @@ class MainActivity : AppCompatActivity() {
             )
         )
         adapter.openDetailsClickLister = {
-
+            Intent(this, DetailsActivity::class.java).run {
+                putExtra(CLICKED_POSITION, it)
+                startActivity(this)
+            }
         }
         binding.rvPicturesList.adapter = adapter
     }
