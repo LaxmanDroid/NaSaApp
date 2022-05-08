@@ -37,7 +37,7 @@ android {
     }
 }
 allOpen {
-    annotation("com.test.nasaapp.utils.OpenForTesting")
+    annotation("com.test.nasapicturestestapp.utils.OpenForTesting")
 }
 
 dependencies {

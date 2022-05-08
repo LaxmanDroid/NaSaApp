@@ -4,11 +4,10 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.test.nasapicturestestapp.R
 import com.test.nasapicturestestapp.data.PictureRepository
-import com.test.nasapicturestestapp.utils.OpenForTesting
 import com.test.nasapicturestestapp.utils.Success
 import com.test.nasapicturestestapp.utils.UiState
 import com.test.nasapicturestestapp.utils.Error
-
+import com.test.nasapicturestestapp.utils.OpenForTesting
 
 
 @OpenForTesting
