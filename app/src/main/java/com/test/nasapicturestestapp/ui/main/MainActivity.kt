@@ -71,6 +71,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showMessage(resId: Int) {
+        //snackbar
         Snackbar.make(binding.rvPicturesList,resId, Snackbar.LENGTH_SHORT).show()
     }
 
